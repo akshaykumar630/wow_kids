@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admissions | WOW KIDS Junior Daisies</title>
+<meta name="description" content="Submit an admission enquiry for WOW KIDS Junior Daisies in Suchitra, Hyderabad. Our team can help you understand programmes, availability and the next steps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#147585;
+  --blue-dark:#0E545F;
+  --blue-light:#60C1D2;
+  --sky:#F7FCFD;
+  --sky-soft:#FFFFFF;
+  --yellow:#60C1D2;
+  --yellow-soft:#A4DCE5;
+  --red:#1CA7BE;
+  --blue:#147585;
+  --ink:#111111;
+  --muted:#111111;
+  --white:#fff;
+  --shadow:0 18px 50px rgba(15,47,107,.13);
+  --radius:28px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Nunito',sans-serif;
+  color:var(--ink);
+  background:var(--sky);
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.logo,.nav a,.btn,.stat strong,.programme-title{
+  font-family:'Fredoka','Baloo 2',sans-serif;
+}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+img{max-width:100%;display:block}
+
+/* playful background — logo-inspired blue, red and yellow palette, kept light and balanced */
+body:before{
+  content:"";
+  position:fixed;
+  width:520px;height:520px;
+  border-radius:50%;
+  background:rgba(96,193,210,.12);
+  left:-250px;top:18%;
+  z-index:-2;
+}
+body:after{
+  content:"";
+  position:fixed;
+  width:420px;height:420px;
+  border-radius:50%;
+  background:rgba(28,167,190,.08);
+  right:-180px;bottom:5%;
+  z-index:-2;
+}
+
+.container{width:min(1180px,92%);margin:auto}
+
+/* TOP BAR */
+.top-strip{
+  background:var(--blue-dark);
+  color:#fff;
+  padding:8px 5%;
+  font-size:13px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+}
+.top-strip span{opacity:.95}
+
+/* NAV */
+.nav-wrap{
+  position:absolute;
+  top:34px;left:0;right:0;
+  z-index:20;
+}
+.nav{
+  width:min(1180px,92%);
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--yellow);
+  font-size:36px;
+  font-weight:700;
+  line-height:.8;
+  text-shadow:3px 3px 0 var(--blue-dark);
+  letter-spacing:-1px;
+}
+.logo-badge{
+  width:53px;height:53px;
+  border-radius:50%;
+  background:var(--yellow);
+  border:5px solid #fff;
+  display:grid;
+  place-items:center;
+  color:var(--blue);
+  font-size:27px;
+  box-shadow:0 5px 0 var(--blue-dark);
+}
+.logo small{
+  display:block;
+  color:#fff;
+  font-family:'Nunito',sans-serif;
+  font-size:8px;
+  letter-spacing:3px;
+  text-shadow:none;
+  margin-top:6px;
+}
+.nav-menu{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  padding:7px;
+  border:2px solid var(--yellow);
+  background:rgba(14,84,95,.90);
+  backdrop-filter:blur(10px);
+  border-radius:4px;
+}
+.nav-menu a{
+  color:#fff;
+  font-family:'Fredoka',sans-serif;
+  font-weight:600;
+  font-size:15px;
+  padding:12px 16px;
+  border-radius:8px;
+  transition:.25s;
+}
+.nav-menu a:hover,.nav-menu a.active{
+  background:var(--yellow);
+  color:var(--blue-dark);
+}
+.nav-cta{
+  background:#fff!important;
+  color:var(--blue)!important;
+  border-radius:30px!important;
+}
+.menu-btn{display:none}
+
+/* HERO */
+.hero{
+  min-height:790px;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 42% 5%,var(--yellow) 0 11%,transparent 11.2%),
+    linear-gradient(135deg,#1CA7BE 0%,#147585 48%,#0E545F 100%);
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  width:1100px;height:780px;
+  background:var(--sky);
+  border-radius:50%;
+  left:-120px;bottom:-580px;
+  transform:rotate(-5deg);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  width:1050px;height:780px;
+  background:rgba(255,229,0,.9);
+  border-radius:50%;
+  right:-720px;top:-300px;
+}
+.hero-inner{
+  width:min(1180px,92%);
+  min-height:790px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  align-items:center;
+  gap:40px;
+  position:relative;
+  z-index:2;
+  padding-top:70px;
+}
+.hero-copy{padding-bottom:80px}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--yellow);
+  font-family:'Fredoka';
+  font-weight:600;
+  font-size:16px;
+  margin-bottom:16px;
+}
+.eyebrow:before{
+  content:"✦";
+  font-size:20px;
+}
+.hero h1{
+  color:#fff;
+  font-size:clamp(48px,6vw,78px);
+  line-height:.98;
+  max-width:680px;
+  letter-spacing:-2px;
+}
+.hero h1 span{
+  color:var(--yellow);
+  display:inline-block;
+  position:relative;
+}
+.hero h1 span:after{
+  content:"";
+  position:absolute;
+  left:4px;right:0;bottom:-8px;
+  height:7px;
+  background:#fff;
+  border-radius:50%;
+  transform:rotate(-2deg);
+}
+.hero-copy p{
+  color:#F7FCFD;
+  font-size:18px;
+  line-height:1.7;
+  max-width:600px;
+  margin:28px 0;
+}
+.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{
+  border:0;
+  cursor:pointer;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  padding:14px 24px;
+  border-radius:999px;
+  font-size:16px;
+  font-weight:600;
+  transition:.25s;
+}
+.btn:hover{transform:translateY(-3px)}
+.btn-yellow{background:var(--yellow);color:var(--blue-dark);box-shadow:0 8px 0 rgba(14,84,95,.20)}
+.btn-white{background:#fff;color:var(--blue);box-shadow:0 8px 0 rgba(14,84,95,.16)}
+.btn-purple{background:var(--blue);color:#fff}
+.hero-visual{
+  position:relative;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.blob{
+  width:min(530px,100%);
+  aspect-ratio:1;
+  background:
+    linear-gradient(rgba(23,71,209,.08),rgba(23,71,209,.08)),
+    url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=85') center/cover;
+  border-radius:44% 56% 58% 42% / 47% 42% 58% 53%;
+  border:12px solid rgba(255,255,255,.35);
+  box-shadow:0 35px 60px rgba(15,47,107,.30);
+  position:relative;
+  overflow:hidden;
+}
+.blob:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 50%,rgba(14,84,95,.20));
+}
+.hero-sticker{
+  position:absolute;
+  right:-15px;
+  top:50px;
+  width:125px;height:125px;
+  background:var(--yellow);
+  border:8px solid #fff;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:var(--blue-dark);
+  text-align:center;
+  font-family:'Fredoka';
+  font-size:17px;
+  line-height:1.05;
+  transform:rotate(10deg);
+  box-shadow:var(--shadow);
+  z-index:2;
+}
+.hero-sticker span{font-size:32px;display:block}
+.doodle{
+  position:absolute;
+  color:var(--yellow);
+  font-size:45px;
+  z-index:2;
+}
+.d1{left:0;top:100px;transform:rotate(-18deg)}
+.d2{right:5%;bottom:40px;transform:rotate(20deg)}
+.d3{left:42%;bottom:0;font-size:35px}
+
+/* floating bottom */
+.quickbar{
+  position:fixed;
+  z-index:30;
+  bottom:0;left:50%;
+  transform:translateX(-50%);
+  background:rgba(15,47,107,.98);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 -8px 30px rgba(15,47,107,.20);
+  border-radius:30px 30px 0 0;
+  display:flex;
+  overflow:hidden;
+}
+.quickbar a{
+  color:#fff;
+  padding:15px 28px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  font-family:'Fredoka';
+  font-weight:500;
+}
+.quickbar a:first-child{border-right:1px solid rgba(255,255,255,.35)}
+.quickbar a:hover{background:#0E545F}
+
+/* SECTION */
+section{padding:100px 0;position:relative}
+.section-light{background:var(--sky)}
+.section-white{background:#fff}
+.section-head{text-align:center;max-width:760px;margin:0 auto 55px}
+.kicker{
+  color:var(--blue);
+  font-family:'Fredoka';
+  font-weight:600;
+  font-size:17px;
+  margin-bottom:8px;
+}
+.section-head h2{
+  color:var(--blue-dark);
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.05;
+}
+.section-head p{
+  margin-top:15px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* STATS */
+.stats{
+  margin-top:-1px;
+  background:var(--sky);
+}
+.stat-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+.stat{
+  min-height:190px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:25px;
+  background:linear-gradient(135deg,#147585,#60C1D2);
+  color:#fff;
+  border-radius:46% 54% 43% 57% / 54% 43% 57% 46%;
+  box-shadow:var(--shadow);
+  transform:rotate(var(--r));
+  transition:.3s;
+}
+.stat:nth-child(2){--r:2deg}
+.stat:nth-child(3){--r:-2deg}
+.stat:nth-child(4){--r:2deg}
+.stat:hover{transform:rotate(0) translateY(-8px)}
+.stat strong{font-size:43px;color:var(--yellow);display:block}
+.stat span{font-family:'Fredoka';font-size:16px}
+
+/* PROGRAMMES */
+.programme-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.card{
+  background:#fff;
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  border:1px solid #A4DCE5;
+  transition:.3s;
+}
+.card:hover{transform:translateY(-8px)}
+.card:nth-child(1){border-top:4px solid #1CA7BE;}
+.card-img{
+  height:190px;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+.card-img:after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-1px;
+  height:35px;
+  background:#fff;
+  clip-path:ellipse(55% 60% at 50% 100%);
+}
+.card:nth-child(1) .card-img{background-image:url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&q=80')}
+.card:nth-child(2) .card-img{background-image:url('https://images.unsplash.com/photo-1564429238817-393bd4286b2a?auto=format&fit=crop&w=800&q=80')}
+.card:nth-child(3) .card-img{background-image:url('https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=80')}
+.card:nth-child(4) .card-img{background-image:url('https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=800&q=80')}
+.card-body{padding:8px 22px 25px}
+.programme-title{font-size:23px;color:var(--blue-dark);margin-bottom:10px}
+.card ul{padding-left:18px;color:#111111;line-height:1.8;font-size:14px}
+
+/* WHY US */
+.why{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:65px;
+  align-items:center;
+}
+.why-art{
+  min-height:500px;
+  border-radius:50% 50% 42% 58% / 50% 45% 55% 50%;
+  background:
+    linear-gradient(135deg,rgba(23,71,209,.06),rgba(255,229,0,.15)),
+    url('https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1000&q=85') center/cover;
+  border:12px solid #fff;
+  box-shadow:var(--shadow);
+  position:relative;
+}
+.why-bubble{
+  position:absolute;
+  bottom:30px;right:-35px;
+  background:var(--yellow);
+  color:var(--blue-dark);
+  width:150px;height:150px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:20px;
+  font-family:'Fredoka';
+  font-size:19px;
+  transform:rotate(8deg);
+  border:7px solid #fff;
+}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.feature{
+  background:#fff;
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 8px 25px rgba(15,47,107,.08);
+}
+.feature-icon{
+  width:50px;height:50px;
+  display:grid;place-items:center;
+  background:var(--yellow);
+  border-radius:16px;
+  color:var(--blue-dark);
+  font-size:24px;
+  margin-bottom:13px;
+}
+.feature h3{font-size:20px;color:var(--blue-dark);margin-bottom:7px}
+.feature p{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* ADMISSION */
+.admission-section{
+  background:linear-gradient(135deg,#147585,#1CA7BE);
+  color:#fff;
+  overflow:hidden;
+}
+.admission-section:before{
+  content:"";
+  position:absolute;
+  width:600px;height:600px;
+  border-radius:50%;
+  background:rgba(255,229,0,.1);
+  right:-200px;top:-200px;
+}
+.admission-grid{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:55px;
+  align-items:center;
+  position:relative;
+  z-index:1;
+}
+.admission-copy h2{font-size:clamp(36px,4vw,56px);line-height:1.05}
+.admission-copy p{color:#A4DCE5;line-height:1.8;margin:18px 0 25px}
+.checks{display:grid;gap:12px}
+.check{display:flex;align-items:center;gap:11px;font-family:'Fredoka'}
+.check i{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--yellow);
+  color:var(--blue-dark);
+  display:grid;place-items:center;
+  font-style:normal;
+}
+.form-box{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(15px);
+  padding:27px;
+  border-radius:25px;
+  color:var(--ink);
+  box-shadow:0 25px 70px rgba(15,47,107,.18);
+}
+.form-box h3{font-size:30px;color:var(--blue-dark);margin-bottom:18px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid input,.form-grid select,.form-grid textarea{
+  width:100%;
+  border:1px solid #A4DCE5;
+  background:#fff;
+  border-radius:13px;
+  padding:13px 15px;
+  outline:none;
+  color:var(--ink);
+}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{border-color:var(--blue)}
+.form-grid textarea{grid-column:1/-1;min-height:90px;resize:vertical}
+.form-grid .full{grid-column:1/-1;width:100%;border:0}
+.form-note{font-size:11px;color:#111111;margin-top:10px}
+
+/* ACTIVITIES */
+.activity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.activity{
+  background:#fff;
+  border-radius:25px;
+  padding:30px;
+  min-height:220px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.activity:after{
+  content:"";
+  position:absolute;
+  width:120px;height:120px;
+  background:var(--yellow);
+  border-radius:50%;
+  right:-45px;bottom:-45px;
+}
+.activity .emoji{font-size:42px;margin-bottom:18px}
+.activity h3{font-size:24px;color:var(--blue-dark);margin-bottom:8px}
+.activity p{color:var(--muted);line-height:1.7;font-size:14px}
+
+/* FOOTER */
+footer{
+  background:#0E545F;
+  color:#fff;
+  padding:65px 0 100px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr 1fr;
+  gap:40px;
+}
+footer h3{font-size:21px;color:var(--yellow);margin-bottom:15px}
+footer p,footer a{color:#A4DCE5;font-size:14px;line-height:1.8}
+footer a{display:block}
+footer a:hover{color:var(--yellow)}
+.footer-logo{font-size:38px;color:var(--yellow);font-family:'Fredoka';margin-bottom:10px}
+.copyright{
+  border-top:1px solid rgba(255,255,255,.12);
+  margin-top:35px;padding-top:22px;
+  color:#A4DCE5;font-size:12px;
+}
+
+/* WhatsApp */
+.whatsapp{
+  position:fixed;
+  right:24px;bottom:90px;
+  width:62px;height:62px;
+  border-radius:50%;
+  background:#0E545F;
+  color:#fff;
+  display:grid;place-items:center;
+  z-index:35;
+  box-shadow:0 12px 30px rgba(0,0,0,.2);
+  font-size:30px;
+  border:4px solid #fff;
+}
+.whatsapp:hover{transform:scale(1.08)}
+
+/* toast */
+.toast{
+  position:fixed;
+  left:50%;bottom:100px;
+  transform:translate(-50%,20px);
+  background:#0E545F;color:#fff;
+  padding:13px 20px;
+  border-radius:999px;
+  opacity:0;pointer-events:none;
+  transition:.3s;
+  z-index:50;
+  font-size:14px;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* responsive */
+@media(max-width:1000px){
+  .nav-menu{gap:0}
+  .nav-menu a{padding:11px 10px;font-size:13px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero{min-height:auto}
+  .hero-inner{padding-top:150px;padding-bottom:80px}
+  .hero-copy{text-align:center;padding-bottom:0}
+  .hero-copy p{margin-left:auto;margin-right:auto}
+  .hero-buttons{justify-content:center}
+  .hero-visual{min-height:430px}
+  .blob{width:430px}
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .programme-grid{grid-template-columns:1fr 1fr}
+  .why{grid-template-columns:1fr}
+  .why-art{min-height:420px}
+  .admission-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .top-strip{display:none}
+  .nav-wrap{top:15px}
+  .nav{align-items:center}
+  .logo{font-size:28px}
+  .logo-badge{width:43px;height:43px;font-size:22px;border-width:4px}
+  .menu-btn{
+    display:grid;place-items:center;
+    width:45px;height:45px;
+    border:2px solid var(--yellow);
+    background:var(--blue);
+    color:#fff;border-radius:12px;
+    font-size:23px;
+    cursor:pointer;
+  }
+  .nav-menu{
+    position:absolute;
+    top:58px;left:0;right:0;
+    display:none;
+    flex-direction:column;
+    background:var(--blue-dark);
+    border-radius:18px;
+    padding:10px;
+  }
+  .nav-menu.open{display:flex}
+  .nav-menu a{width:100%;text-align:center;padding:12px}
+  .hero-inner{padding-top:120px}
+  .hero h1{font-size:48px}
+  .hero-copy p{font-size:16px}
+  .hero-visual{min-height:360px}
+  .blob{width:330px}
+  .hero-sticker{width:95px;height:95px;font-size:13px;right:0;top:25px}
+  .hero-sticker span{font-size:24px}
+  section{padding:70px 0}
+  .stat-grid,.programme-grid,.activity-grid,.features{grid-template-columns:1fr}
+  .stat{min-height:160px}
+  .why-art{min-height:330px}
+  .why-bubble{right:-5px}
+  .form-grid{grid-template-columns:1fr}
+  .form-grid textarea,.form-grid .full{grid-column:1}
+  .footer-grid{grid-template-columns:1fr}
+  .quickbar{width:94%;justify-content:center}
+  .quickbar a{font-size:13px;padding:14px 15px;flex:1;justify-content:center}
+  .whatsapp{right:16px;bottom:80px;width:56px;height:56px}
+}
+
+/* ================================
+   FINAL WOW KIDS COLOR RULES
+   No violet/purple. Red only on white.
+   ================================ */
+body{
+  background:#F7FCFD;
+  color:#111111;
+}
+body:before{
+  background:rgba(255,212,0,.10);
+}
+body:after{
+  background:rgba(23,71,209,.05);
+}
+.top-strip{background:#0E545F;}
+.nav-wrap{background:transparent;}
+.nav-menu{background:rgba(15,47,107,.96);border-color:#60C1D2;}
+.nav-menu a:hover,.nav-menu a.active{background:#60C1D2;color:#0E545F;}
+.nav-cta{background:#fff!important;color:#147585!important;}
+
+.hero{
+  background:
+    radial-gradient(circle at 42% 5%,#60C1D2 0 11%,transparent 11.2%),
+    linear-gradient(135deg,#1CA7BE 0%,#147585 52%,#0E545F 100%);
+}
+.hero:before{background:#F7FCFD;}
+.hero:after{background:rgba(96,193,210,.92);}
+.hero-copy p{color:#FFFFFF;}
+.hero h1 span{color:#60C1D2;}
+.btn-yellow{background:#60C1D2;color:#0E545F;box-shadow:0 8px 0 rgba(14,84,95,.20);}
+.btn-white{background:#fff;color:#147585;box-shadow:0 8px 0 rgba(14,84,95,.16);}
+.btn-blue{background:#147585;color:#fff;}
+.btn-red{background:#1CA7BE;color:#fff;}
+
+.quickbar{
+  background:rgba(15,47,107,.98);
+  box-shadow:0 -8px 30px rgba(15,47,107,.18);
+}
+.quickbar a:hover{background:#0E545F;}
+
+.section-light{background:#F7FCFD;}
+.section-white{background:#fff;}
+.kicker{color:#147585;}
+.section-head h2{color:#0E545F;}
+.section-head p{color:#111111;}
+
+.stats{background:#F7FCFD;}
+.stat{
+  background:linear-gradient(135deg,#147585,#60C1D2);
+  box-shadow:0 18px 40px rgba(15,47,107,.14);
+}
+.stat strong{color:#60C1D2;}
+
+.card{
+  background:#fff;
+  border-color:#A4DCE5;
+  box-shadow:0 14px 35px rgba(15,47,107,.10);
+}
+.programme-title{color:#0E545F;}
+.card ul{color:#111111;}
+
+.why-art{
+  background:
+    linear-gradient(135deg,rgba(23,71,209,.06),rgba(255,212,0,.12)),
+    url('https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1000&q=85') center/cover;
+}
+.feature{
+  background:#fff;
+  box-shadow:0 8px 25px rgba(15,47,107,.08);
+}
+.feature-icon{
+  background:#60C1D2;
+  color:#0E545F;
+}
+.feature:nth-child(2) .feature-icon{
+  background:#1CA7BE;
+  color:#fff;
+}
+.feature h3{color:#0E545F;}
+.feature p{color:#111111;}
+
+.admission-section{
+  background:linear-gradient(135deg,#147585,#0E545F);
+}
+.admission-section:before{background:rgba(255,212,0,.10);}
+.form-box{
+  background:rgba(255,255,255,.98);
+  box-shadow:0 25px 70px rgba(15,47,107,.18);
+}
+.form-box h3{color:#0E545F;}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{
+  border-color:#147585;
+  box-shadow:0 0 0 3px rgba(23,71,209,.08);
+}
+
+.activity{
+  background:#fff;
+  box-shadow:0 14px 35px rgba(15,47,107,.10);
+}
+.activity:after{background:#60C1D2;}
+.activity h3{color:#0E545F;}
+.activity p{color:#111111;}
+
+footer{background:#0E545F;}
+footer h3{color:#60C1D2;}
+footer p,footer a{color:#A4DCE5;}
+footer a:hover{color:#60C1D2;}
+.copyright{color:#A4DCE5;}
+
+.toast{background:#0E545F;color:#fff;}
+
+/* Red is reserved for important points on white backgrounds only. */
+.notice-strip{
+  background:#fff;
+  border-bottom:1px solid #A4DCE5;
+  padding:16px 0;
+}
+.notice-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+.notice-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 16px;
+  border-radius:999px;
+  background:#1CA7BE;
+  color:#fff;
+  font-family:'Fredoka',sans-serif;
+  font-weight:600;
+  box-shadow:0 7px 18px rgba(227,6,19,.16);
+}
+.notice-pill span{font-size:11px;}
+.notice-inner p{
+  color:#0E545F;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* Keep all important text high contrast */
+.card-body,.feature,.activity,.form-box{color:#111111;}
+.card ul,.feature p,.activity p,.section-head p{color:#111111;}
+.form-note{color:#111111;}
+
+
+.page-hero{
+  padding:155px 0 85px;
+  background:linear-gradient(135deg,#147585,#0E545F);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.page-hero:after{
+  content:"";
+  position:absolute;
+  width:420px;height:420px;
+  right:-120px;top:-180px;
+  border-radius:50%;
+  background:rgba(255,212,0,.18);
+}
+.page-hero h1{font-size:clamp(42px,6vw,72px);max-width:850px;margin:10px 0 15px;}
+.page-hero p{max-width:760px;font-size:18px;line-height:1.8;color:#A4DCE5;}
+.page-content{padding:80px 0;}
+.page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.info-card{background:#fff;border:1px solid #A4DCE5;border-radius:24px;padding:30px;box-shadow:0 14px 35px rgba(15,47,107,.09);}
+.info-card h3{color:#0E545F;margin:0 0 10px;font-size:24px;}
+.info-card p,.info-card li{color:#111111;line-height:1.7;}
+.page-image{width:100%;height:320px;object-fit:cover;border-radius:28px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;}
+.red-point{color:#1CA7BE;font-weight:800;}
+.page-cta{margin-top:35px;display:flex;gap:14px;flex-wrap:wrap;}
+@media(max-width:850px){
+  .page-grid,.two-col{grid-template-columns:1fr;}
+  .page-hero{padding:125px 0 65px;}
+}
+
+/* ===== WOW KIDS TEAL PALETTE — FINAL COLOR SYSTEM ===== */
+:root{
+  --teal-50:#F7FCFD;
+  --teal-100:#A4DCE5;
+  --teal-200:#60C1D2;
+  --teal-300:#1CA7BE;
+  --teal-400:#147585;
+  --teal-500:#0E545F;
+  --ink-black:#111111;
+}
+body{color:var(--ink-black);background:var(--teal-50);}
+h1,h2,h3,h4{color:var(--teal-500);}
+.top-strip{background:var(--teal-500);}
+.logo{color:var(--teal-100);text-shadow:3px 3px 0 var(--teal-500);}
+.logo-badge{background:var(--teal-100);color:var(--teal-500);box-shadow:0 5px 0 var(--teal-500);}
+.nav-menu{border-color:var(--teal-200);background:rgba(14,84,95,.92);}
+.nav-menu a:hover,.nav-menu a.active{background:var(--teal-100);color:var(--teal-500);}
+.hero{background:radial-gradient(circle at 42% 5%,var(--teal-200) 0 11%,transparent 11.2%),linear-gradient(135deg,var(--teal-300) 0%,var(--teal-400) 48%,var(--teal-500) 100%);}
+.hero h1 span{color:var(--teal-100);}
+.btn-yellow,.btn-red,.btn-blue,.btn-purple{background:var(--teal-300)!important;color:#fff!important;box-shadow:0 7px 0 rgba(14,84,95,.22);}
+.btn-white{background:#fff!important;color:var(--teal-500)!important;border:2px solid var(--teal-200);}
+.section-light{background:var(--teal-50);}
+.section-head h2{color:var(--teal-500);}
+.section-head p,.card ul,.feature p,.activity p{color:var(--ink-black);}
+.quickbar{background:#fff!important;border-color:var(--teal-100)!important;}
+.quickbar a{background:var(--teal-300)!important;color:#fff!important;}
+.quickbar a:hover{background:var(--teal-400)!important;}
+.page-hero{background:linear-gradient(135deg,var(--teal-400),var(--teal-500));}
+.info-card{border-color:var(--teal-100);}
+.info-card h3{color:var(--teal-500);}
+.info-card p,.info-card li{color:var(--ink-black);}
+.red-point{color:var(--teal-300);}
+</style>
+</head>
+<body>
+<div class="top-strip"><span>🌟 Admissions Open for 2026–27</span><span>📍 Bank Colony, Suchitra, Hyderabad</span></div>
+
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-badge">W</span>
+      <span>WOW KIDS<small>JUNIOR DAISIES</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" class="">Home</a>
+      <a href="about-us.html" class="">About Us</a>
+      <a href="programmes.html" class="">Programmes</a>
+      <a href="learning.html" class="">Learning</a>
+      <a href="activities.html" class="">Activities</a>
+      <a href="admissions.html" class="active">Admissions</a>
+      <a href="contact.html" class="">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="kicker" style="color:#60C1D2">WOW KIDS Junior Daisies</div>
+    <h1>Take the first step toward a joyful school journey.</h1>
+    <p>Submit an admission enquiry for WOW KIDS Junior Daisies in Suchitra, Hyderabad. Our team can help you understand programmes, availability and the next steps.</p>
+  </div>
+</section>
+<main class="page-content section-white"><div class="container">
+      <div class="two-col">
+        <div>
+          <div class="kicker">Admissions 2026–27</div>
+          <h2>Let's find the right programme for your child.</h2>
+          <p>Share your details and our team will get in touch with information about the programme, school experience and admission process.</p>
+          <p class="red-point">Admissions are open for the 2026–27 academic year.</p>
+        </div>
+        <div class="form-box">
+          <h3>Admission Enquiry</h3>
+          <form onsubmit="event.preventDefault();alert('Thank you! Your enquiry has been submitted.');">
+            <div class="form-grid">
+              <input required placeholder="Parent / Guardian Name">
+              <input required type="tel" placeholder="Mobile Number">
+              <input type="email" placeholder="Email Address">
+              <select required><option value="">Select Programme</option><option>Play Group</option><option>Nursery</option><option>Kindergarten</option><option>Daycare</option></select>
+              <textarea rows="4" placeholder="Message"></textarea>
+            </div>
+            <button class="btn btn-blue" type="submit">Submit Enquiry →</button>
+          </form>
+        </div>
+      </div>
+    </div></main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3>WOW KIDS Junior Daisies</h3><p>Joyful early learning in Suchitra, Hyderabad.</p></div>
+      <div><h3>Quick Links</h3><p><a href="about-us.html">About Us</a><br><a href="programmes.html">Programmes</a><br><a href="learning.html">Learning</a></p></div>
+      <div><h3>Admissions</h3><p><a href="admissions.html">Admission Enquiry</a><br><a href="contact.html">Locate Us</a></p></div>
+    </div>
+    <div class="copyright">© 2026 WOW KIDS Junior Daisies. All rights reserved.</div>
+  </div>
+</footer>
+<div class="quickbar">
+  <a href="admissions.html">📝 Admission Enquiry</a>
+  <a href="contact.html">📍 Locate Us</a>
+</div>
+<a class="whatsapp" href="https://wa.me/?text=Hello%20WOW%20KIDS%20Junior%20Daisies%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20for%202026-27." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.82 3 16c0 2.29.59 4.44 1.71 6.36L3.2 29l6.82-1.45A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-1.92 0-3.79-.52-5.42-1.51l-.39-.23-4.05.86.86-3.94-.25-.41A10.7 10.7 0 1 1 16 26.7Zm5.87-8.02c-.32-.16-1.88-.93-2.17-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.04-1.01 1.25-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.77-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.98-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.63 0 1.55 1.14 3.05 1.3 3.26.16.21 2.24 3.42 5.42 4.8.76.33 1.35.53 1.81.68.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.26-.74.26-1.37.18-1.51-.08-.13-.29-.21-.61-.37Z"/></svg>
+</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'), navMenu=document.getElementById('navMenu');
+menuBtn.addEventListener('click',()=>navMenu.classList.toggle('open'));
+document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>navMenu.classList.remove('open')));
+</script>
+</body>
+</html>
+<style>
+
+/* ===== FINAL CHILD-FRIENDLY TEAL REFINEMENTS ===== */
+.page-hero h1{color:#fff !important;}
+.page-hero p{color:#fff !important;}
+.admission-copy h2{color:#fff !important;}
+.admission-copy p,.admission-copy .check{color:#fff !important;}
+.admission-copy .kicker{color:#A4DCE5 !important;}
+.hero-sticker{
+  background:#A4DCE5 !important;
+  color:#0E545F !important;
+  font-family:'Fredoka','Baloo 2',sans-serif !important;
+  font-weight:800 !important;
+  font-size:20px !important;
+  letter-spacing:.2px;
+  text-transform:none;
+}
+.hero-sticker span{color:#0E545F !important;}
+/* Animated stat numbers stay white for strong contrast */
+.stat strong{color:#fff !important;font-weight:800;}
+.stat span{color:#fff !important;font-weight:600;}
+.stat{color:#fff;}
+/* WhatsApp */
+.whatsapp{
+  background:#1CA7BE !important;
+  color:#fff !important;
+  display:grid !important;
+  place-items:center !important;
+  border:4px solid #fff;
+  box-shadow:0 10px 25px rgba(14,84,95,.25);
+}
+.whatsapp svg{width:30px;height:30px;display:block;fill:#fff;}
+/* Nursery image */
+.programme-grid .card:nth-child(2) .card-img{
+  background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85') !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+@media(max-width:700px){
+  .hero-sticker{width:118px;height:118px;font-size:18px !important;}
+}
+
+</style>
